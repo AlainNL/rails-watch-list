@@ -1,0 +1,12 @@
+<div class=“container mt-5”>
+  <div class=“row”>
+    <h1> List of movies </h1>
+    <div class=“col-6 mx-auto”>
+    <ul>
+      <% @lists.each do |list| %>
+        <li><%= link_to list.name, list_path(list)%></li>
+      <% end %>
+    </ul>
+    </div>
+  </div>
+</div>

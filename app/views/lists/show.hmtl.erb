@@ -1,0 +1,14 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <h1><%= @list.title %></h1>
+      <div>
+        <p>Found at: <%= @list.post_url %></p>
+        <p>Species: <%= @list.overview %></p>
+        <p>Found on the <%= @list.category %></p>
+      </div>
+
+      <%= link_to 'Back to the list', lists_path %>
+    </div>
+  </div>
+</div>

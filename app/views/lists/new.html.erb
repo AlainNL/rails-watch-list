@@ -1,0 +1,13 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <h1>New list</h1>
+      <%= simple_form_for(@list) do |f| %>
+        <%= f.input :title %>
+        <%= f.input :post_url %>
+        <%= f.input :overview %>
+        <%= f.submit "Create", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
