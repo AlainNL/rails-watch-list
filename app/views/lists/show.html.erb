@@ -6,7 +6,12 @@
         <p>Found at: <%= @list.post_url %></p>
         <p>Species: <%= @list.overview %></p>
         <p>Found on the <%= @list.category %></p>
+        <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill%>
       </div>
+
+      <div class="card-category"
+  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>')">
+</div>
 
       <%= link_to 'Back to the list', lists_path %>
     </div>
